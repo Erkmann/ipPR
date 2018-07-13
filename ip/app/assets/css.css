@@ -1,13 +1,9 @@
 body{
-
-
-
-
-
-
+    background-image: url("");
 }
 
 form{
+    margin-top: 10%;
     margin-left: 12%;
 }
 
@@ -17,5 +13,5 @@ height: 40px;
 }
 
 input[type="button"]{
-    margin-top: 400px;
+
 }
