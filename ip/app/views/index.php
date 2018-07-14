@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="../assets/css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
@@ -9,16 +9,17 @@
 
     <script>
         $(document).ready(function(){
+
           $('#bt').click(function () {
-              var t1 = $('#1').val();
-              var t2 = $('#2').val();
-              var t3 = $('#3').val();
-              var t4 = $('#4').val();
-              var masc = $('#masc').val();
-              var rota = "calcular";
+               t1 = $('#1').val();
+               t2 = $('#2').val();
+               t3 = $('#3').val();
+               t4 = $('#4').val();
+               masc = $('#masc').val();
+               rota = "calcular";
 
               $.get("indexController.php", {1 : t1, 2: t2, 3: t3, 4: t4, 'mascara': masc,'rota': rota }, function (data) {
-                  $('#resultado').append(data);
+                  $('#resultado').html(data);
               })
 
           })
@@ -59,7 +60,6 @@
 </body>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 

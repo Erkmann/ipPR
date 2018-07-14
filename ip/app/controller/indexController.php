@@ -56,12 +56,12 @@ if (!isset($_GET['rota'])){
 
 if (isset($_GET['rota']) and $_GET['rota'] == 'calcular') {
     $ip = especIp($_GET['1'], $_GET['2'],$_GET['3'],$_GET['4'],$_GET['mascara']);
-    echo "<h2> Quantidade de Sub-Redes: ".$ip['qtd_sub']."</h2>";
-    echo "<h2> Quantidade de Endereços em uma Sub-Rede: ".$ip['qtd_end']."</h2>";
-    echo "<h2> Quantidade de Hosts em uma Sub-Rede: ".$ip['hosts']."</h2>";
-    echo "<h2> Primeiro Host da Rede do Ip: ".$ip['p_host']."</h2>";
-    echo "<h2> Ultimo Host da Rede do Ip: ".$ip['u_host']."</h2>";
-    echo "<h2> Endereço de Broadcast da Sub-Rede do Ip: ".$ip['bdc']."</h2>";
-    echo "<h2> Máscara de Rede: ".$ip['masc']."</h2>";
-    echo "<h2> Classe do Ip: ".$ip['classe']."</h2>";
+    echo "<h2 class='lead answ'> Quantidade de Sub-Redes: ".$ip['qtd_sub']."</h2>";
+    echo "<h2 class='lead answ'> Quantidade de Endereços em uma Sub-Rede: ".$ip['qtd_end']."</h2>";
+    echo "<h2 class='lead answ'> Quantidade de Hosts em uma Sub-Rede: ".$ip['hosts']."</h2>";
+    echo "<h2 class='lead answ'> Primeiro Host da Rede do Ip: ".$ip['p_host']."</h2>";
+    echo "<h2 class='lead answ'> Ultimo Host da Rede do Ip: ".$ip['u_host']."</h2>";
+    echo "<h2 class='lead answ'> Endereço de Broadcast da Sub-Rede do Ip: ".$ip['bdc']."</h2>";
+    echo "<h2 class='lead answ'> Máscara de Rede: ".$ip['masc']."</h2>";
+    echo "<h2 class='lead answ'> Classe do Ip: ".$ip['classe']."</h2>";
 }
